@@ -21,7 +21,6 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    // const date = new Date();
     const date = Date.now();
 
     if (selectedDates[0].getTime() < date) {
@@ -71,7 +70,6 @@ startButton.addEventListener('click', event => {
   dateInput.setAttribute('disabled', '');
 
   function executeTimer() {
-    // const date = new Date();
     const date = Date.now();
 
     const timeLeft = selectedTime - date;
