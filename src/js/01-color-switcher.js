@@ -2,11 +2,6 @@ const startButton = document.querySelector('button[data-start]');
 const stopButton = document.querySelector('button[data-stop]');
 const body = document.querySelector('body');
 
-const sus = new Date();
-const cooc = Date.now();
-console.log(sus);
-console.log(cooc);
-
 stopButton.setAttribute('disabled', '');
 
 function getRandomHexColor() {
