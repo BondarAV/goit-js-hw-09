@@ -21,9 +21,10 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    const date = new Date();
+    // const date = new Date();
+    const date = Date.now();
 
-    if (selectedDates[0].getTime() < date.getTime()) {
+    if (selectedDates[0].getTime() < date) {
       window.alert('Please choose a date in the future');
 
       startButton.setAttribute('disabled', '');
@@ -70,9 +71,10 @@ startButton.addEventListener('click', event => {
   dateInput.setAttribute('disabled', '');
 
   function executeTimer() {
-    const date = new Date();
+    // const date = new Date();
+    const date = Date.now();
 
-    const timeLeft = selectedTime - date.getTime();
+    const timeLeft = selectedTime - date;
 
     const timeLeftArray = Object.values(convertMs(timeLeft));
 
