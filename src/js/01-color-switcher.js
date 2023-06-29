@@ -18,7 +18,7 @@ function toggleAttributes(firstButton, secondButton) {
 startButton.addEventListener('click', () => {
   toggleAttributes(startButton, stopButton);
 
-  body.style.backgroundColor = getRandomHexColor();
+  // body.style.backgroundColor = getRandomHexColor();
 
   timerId = setInterval(() => {
     body.style.backgroundColor = getRandomHexColor();

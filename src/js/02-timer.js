@@ -63,7 +63,7 @@ function changeElementValue(element, newValue) {
   element.textContent = newValue;
 }
 
-flatpickr('input#datetime-picker', options);
+flatpickr(dateInput, options);
 
 startButton.addEventListener('click', event => {
   startButton.setAttribute('disabled', '');
